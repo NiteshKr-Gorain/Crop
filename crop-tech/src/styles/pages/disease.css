@@ -1,0 +1,302 @@
+/* Disease Detection Page */
+.disease-detection {
+  animation: fadeIn 0.3s ease;
+}
+
+.disease-detection h1 {
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+}
+
+.disease-detection.dark h1 {
+  color: #ecf0f1;
+}
+
+.disease-detection > p {
+  color: #95a5a6;
+  margin-bottom: 2rem;
+}
+
+.disease-detection.dark > p {
+  color: #bdc3c7;
+}
+
+/* Container */
+.detection-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .detection-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Upload Card */
+.upload-card {
+  grid-column: span 1;
+  height: fit-content;
+}
+
+.upload-area {
+  margin-bottom: 1.5rem;
+}
+
+.upload-label {
+  display: block;
+  cursor: pointer;
+}
+
+.upload-content {
+  padding: 3rem 1rem;
+  background: #f8f9fa;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.disease-detection.dark .upload-content {
+  background: #1a1a1a;
+  border-color: #444;
+}
+
+.upload-content:hover {
+  border-color: #2ecc71;
+  background: #e8f5e9;
+}
+
+.disease-detection.dark .upload-content:hover {
+  background: transparent;
+  border-color: #2ecc71;
+}
+
+.upload-icon {
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.upload-content p {
+  margin: 0.5rem 0;
+  color: #2c3e50;
+}
+
+.disease-detection.dark .upload-content p {
+  color: #ecf0f1;
+}
+
+.small-text {
+  font-size: 0.85rem;
+  color: #95a5a6;
+}
+
+.disease-detection.dark .small-text {
+  color: #bdc3c7;
+}
+
+/* Image Preview */
+.image-preview {
+  position: relative;
+  height: 300px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.disease-detection.dark .image-preview {
+  background: #1a1a1a;
+  border: 1px solid #444;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-remove {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: rgba(231, 76, 60, 0.9);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-remove:hover {
+  background: rgba(192, 57, 43, 1);
+}
+
+/* Result Card */
+.result-card {
+  grid-column: span 1;
+}
+
+.disease-result {
+  margin-bottom: 1.5rem;
+}
+
+.disease-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+}
+
+.disease-detection.dark .disease-header {
+  border-color: #444;
+}
+
+.disease-header h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.disease-detection.dark .disease-header h3 {
+  color: #ecf0f1;
+}
+
+/* Result Details */
+.result-details {
+  margin-bottom: 1.5rem;
+}
+
+.result-details .detail {
+  margin-bottom: 1.5rem;
+}
+
+.result-details .detail span {
+  display: block;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.disease-detection.dark .result-details .detail span {
+  color: #ecf0f1;
+}
+
+/* Confidence Bar */
+.confidence-bar {
+  height: 20px;
+  background: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.disease-detection.dark .confidence-bar {
+  background: #1a1a1a;
+}
+
+.confidence-fill {
+  height: 100%;
+  transition: width 0.5s ease;
+  border-radius: 4px;
+}
+
+/* Treatment Card */
+.treatment-card {
+  background: #e8f5e9;
+  border-left: 4px solid #2ecc71;
+  margin-bottom: 1rem;
+}
+
+.disease-detection.dark .treatment-card {
+  background: #1a3a1a;
+}
+
+.treatment-card h4 {
+  margin-top: 0;
+  color: #27ae60;
+}
+
+.disease-detection.dark .treatment-card h4 {
+  color: #90ee90;
+}
+
+.treatment-card p {
+  margin: 0;
+  color: #27ae60;
+}
+
+.disease-detection.dark .treatment-card p {
+  color: #bdc3c7;
+}
+
+/* Additional Steps */
+.additional-steps {
+  background: #fff3e0;
+  border-left: 4px solid #f39c12;
+}
+
+.disease-detection.dark .additional-steps {
+  background: #3a2a1a;
+  border-color: #f39c12;
+}
+
+.additional-steps h4 {
+  margin-top: 0;
+  color: #f57c00;
+}
+
+.disease-detection.dark .additional-steps h4 {
+  color: #ffc107;
+}
+
+.additional-steps ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.additional-steps li {
+  color: #f57c00;
+  margin-bottom: 0.5rem;
+}
+
+.disease-detection.dark .additional-steps li {
+  color: #bdc3c7;
+}
+
+/* Info Card */
+.info-card h2 {
+  color: #2c3e50;
+}
+
+.disease-detection.dark .info-card h2 {
+  color: #ecf0f1;
+}
+
+.info-card ul {
+  padding-left: 1.5rem;
+}
+
+.info-card li {
+  margin-bottom: 0.75rem;
+  color: #2c3e50;
+}
+
+.disease-detection.dark .info-card li {
+  color: #bdc3c7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .detection-container {
+    grid-template-columns: 1fr;
+  }
+
+  .image-preview {
+    height: 200px;
+  }
+}
